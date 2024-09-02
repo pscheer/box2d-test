@@ -25,7 +25,7 @@ public:
         shapeDef.friction = 0.3f;
         shapeDef.restitution = 0.8f;
 
-        b2Circle circle;
+        b2Circle circle = {};
         circle.radius = radius;
 
         b2ShapeId ball1ShapeId = b2CreateCircleShape(_bodyId, &shapeDef, &circle);
